@@ -1,6 +1,6 @@
 # README.md
 
-一. 项目作用
+## 一. 项目作用
 作为vln项目中全局路径搜索+路径优化+轨迹跟踪+局部避障的部分
 
 
@@ -18,3 +18,8 @@
   - [TODO]支持使用vln_gazebo_simulator中的小车的仿真接口
 - [TODO]局部避障验证与实现
   - [TODO]需要在vln_gazebo_simulator中增加局部障碍物(Tipriest加)
+ 
+## 项目使用
+```
+git submodule update --init --recursive
+```
