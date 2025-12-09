@@ -2,3 +2,7 @@
 	path = src/navigation2
 	url = git@github.com:limu12138/navigation2.git
 	branch = humble
+[submodule "src/map_generator"]
+	path = src/map_generator
+	url = git@github.com:Tipriest/map_generator.git
+	branch = ros2/humble
