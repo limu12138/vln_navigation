@@ -24,13 +24,17 @@ git submodule update --init --recursive
 ```
 
 ## 编译流程
+```
 colcon build --packages-up-to navigation2 --symlink-install
 colcon build --packages-select map_generator
 source /install/setup.bash
+```
 
 ## 运行
+```
 ros2 launch map_generator optimize_visual.launch.py
 ros2 launch nav2_bringup tb3_simulation_launch.py headless:=False
+```
 
 
 <!-- rm -rf build install log
