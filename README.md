@@ -25,9 +25,9 @@ git submodule update --init --recursive
 
 ## 编译流程
 ```
-colcon build --packages-up-to navigation2 --symlink-install
 colcon build --packages-select map_generator
-source /install/setup.bash
+colcon build --packages-up-to navigation2 --symlink-install
+source ./install/setup.bash
 ```
 
 ## 运行
