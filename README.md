@@ -27,7 +27,14 @@ git submodule update --init --recursive
 ```
 colcon build --packages-select map_generator
 colcon build --packages-up-to navigation2 --symlink-install
+colcon build --packages-up-to nav2_bringup --symlink-install --allow-overriding nav2_map_server nav2_msgs
+<!-- colcon build --packages-select navigation2 --symlink-install-->
 source ./install/setup.bash
+```
+
+## 测试
+```
+ros2 launch nav2_bringup fuben_tb3_simulation_launch.py headless:=False
 ```
 
 ## 运行
